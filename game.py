@@ -2,10 +2,12 @@ import random
 print('Feel free to stop the game at anytime by typing [q]')
 #choices for game rock, paper, or scissors
 choices=['r','p','s']
-#computers random choice
 computer = random.choice(choices)
+
 #loop to start the game
 while True:
+    #computers random choice
+    computer = random.choice(choices)
     #users input
     user=input('choose your weapon; [r]ock, [p]aper, [s]cissors: ').lower()
     #multiple if statments that represent possible outcomes and the actions that should happen
@@ -58,3 +60,4 @@ while True:
         if user == 'q':
             print('Thanks for playing')
             break 
+
